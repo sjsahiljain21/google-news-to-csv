@@ -154,4 +154,4 @@ def update_graphs(n_clicks, keywords_value, dropdown_time_value, dropdown_countr
     return fig
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)
