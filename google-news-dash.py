@@ -12,7 +12,7 @@ import dash_bootstrap_components as dbc
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], prevent_initial_callbacks=True)
 
 # Create server variable with Flask server object for use with gunicorn
-server = app.server
+# server = app.server
 
 
 app.layout = html.Div([
@@ -154,4 +154,4 @@ def update_graphs(n_clicks, keywords_value, dropdown_time_value, dropdown_countr
     return fig
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
