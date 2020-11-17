@@ -12,7 +12,7 @@ import dash_bootstrap_components as dbc
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], prevent_initial_callbacks=True)
 
 # Create server variable with Flask server object for use with gunicorn
-# server = app.server
+server = app.server
 
 
 app.layout = html.Div([
